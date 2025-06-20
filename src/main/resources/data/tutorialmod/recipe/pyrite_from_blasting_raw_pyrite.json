@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "group": "pyrite",
+  "category": "misc",
+  "ingredient": [
+    {
+      "item": "tutorialmod:raw_pyrite"
+    }
+  ],
+  "result": {
+    "id": "tutorialmod:pyrite"
+  },
+  "experience": 0.25,
+  "cookingtime": 100
+}
