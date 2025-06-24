@@ -1,0 +1,6 @@
+{
+    "parent": "pyritemod:item/pyrite_bow",
+    "textures": {
+        "layer0": "pyritemod:item/pyrite_bow_pulling_0"
+    }
+}

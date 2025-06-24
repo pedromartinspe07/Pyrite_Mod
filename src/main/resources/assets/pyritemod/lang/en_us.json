@@ -1,0 +1,94 @@
+{
+  "item.pyritemod.pyrite": "Pyrite Gem",
+  "item.pyritemod.raw_pyrite": "Raw Pyrite",
+
+  "item.pyritemod.chisel": "Chisel",
+  "item.pyritemod.pudding": "Pudding",
+  "item.pyritemod.peach": "Peach",
+  "item.pyritemod.aurora_ashes": "Aurora Ashes",
+
+  "item.pyritemod.smithing_template_netherite": "Netherite Smithing Template",
+
+  "item.pyritemod.pyrite_sword": "Pyrite Sword",
+  "item.pyritemod.pyrite_pickaxe": "Pyrite Pickaxe",
+  "item.pyritemod.pyrite_shovel": "Pyrite Shovel",
+  "item.pyritemod.pyrite_axe": "Pyrite Axe",
+  "item.pyritemod.pyrite_hoe": "Pyrite Hoe",
+
+  "item.pyritemod.pyrite_hammer": "Pyrite Hammer",
+
+  "item.pyritemod.pyrite_helmet": "Pyrite Helmet",
+  "item.pyritemod.pyrite_chestplate": "Pyrite Chestplate",
+  "item.pyritemod.pyrite_leggings": "Pyrite Leggings",
+  "item.pyritemod.pyrite_boots": "Pyrite Boots",
+
+  "item.pyritemod.pyrite_horse_armor": "Pyrite Horse Armor",
+  "item.pyritemod.pedromartss_armor_trim_smithing_template": "PedroMartss Trim Template",
+
+  "item.pyritemod.pyrite_bow": "Pyrite Bow",
+
+  "item.pyritemod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.pyritemod.bar_brawl_music_disc.desc": "PedroMartss Tech - Bar Brawl (CC0)",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "item.pyritemod.peach_seeds": "Peach Seeds",
+  "item.pyritemod.golden_raspberries": "Golden Raspberries  ",
+
+
+  "block.pyritemod.pyrite_block": "Block of Pyrite",
+  "block.pyritemod.raw_pyrite_block": "Block of Raw Pyrite",
+  "block.pyritemod.pyrite_ore": "Pyrite Ore",
+  "block.pyritemod.pyrite_deepslate_ore": "Pyrite Deepslate Ore",
+
+  "block.pyritemod.pyrite_end_ore": "Pyrite End Ore",
+  "block.pyritemod.pyrite_nether_ore": "Pyrite Nether Ore",
+
+  "block.pyritemod.magic_block": "Magic Block",
+
+  "block.pyritemod.pyrite_stairs": "Pyrite Stairs",
+  "block.pyritemod.pyrite_slab": "Pyrite Slab",
+
+  "block.pyritemod.pyrite_button": "Pyrite Button",
+  "block.pyritemod.pyrite_pressure_plate": "Pyrite Pressure Plate",
+
+  "block.pyritemod.pyrite_fence": "Pyrite Fence",
+  "block.pyritemod.pyrite_fence_gate": "Pyrite Fence Gate",
+  "block.pyritemod.pyrite_wall": "Pyrite Wall",
+
+  "block.pyritemod.pyrite_door": "Pyrite Door",
+  "block.pyritemod.pyrite_trapdoor": "Pyrite Trapdoor",
+
+  "block.pyritemod.pyrite_lamp": "Pyrite Lamp",
+
+  "block.pyritemod.peach_crop": "Peach Crop",
+  "block.pyritemod.golden_raspberry_bush": "Golden Raspberries Bush",
+
+  "effect.pyritemod.slimey": "Slimey",
+
+  "painting.pyritemod.bouquet.title": "Bouquet",
+  "painting.pyritemod.bouquet.author": "PedroMartss",
+  "painting.pyritemod.cavebird.title": "CaveBird",
+  "painting.pyritemod.cavebird.author": "PedroMartss",
+  "painting.pyritemod.courbet.title": "CourBet",
+  "painting.pyritemod.courbet.author": "PedroMartss",
+
+
+  "enchantment.pyritemod.lightning_striker": "Lighting Striker",
+
+  "creativetab.pyritemod.pyrite_items": "Pyrite Items",
+  "creativetab.pyritemod.pyrite_blocks": "Pyrite Blocks",
+
+  "tooltip.pyritemod.magic_block_tooltip": "This Block is quite §9MAGICAL§r",
+
+  "tooltip.pyritemod.chisel.shift_down": "This Item changes certain Blocks",
+  "tooltip.pyritemod.chisel": "Press §eShift§r for more Information!",
+
+  "tooltip.pyritemod.pudding": "This tastes GREAT!",
+  "tooltip.pyritemod.peach": "This tastes SPEED!",
+
+  "trim_pattern.pyritemod.pedromartss": "PedroMartss Armor Trim",
+  "trim_material.pyritemod.pyrite": "Pyrite Material"
+}
