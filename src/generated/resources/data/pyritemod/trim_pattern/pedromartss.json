@@ -1,0 +1,8 @@
+{
+  "asset_id": "pyritemod:pedromartss",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.pyritemod.pedromartss"
+  },
+  "template_item": "pyritemod:pedromartss_armor_trim_smithing_template"
+}

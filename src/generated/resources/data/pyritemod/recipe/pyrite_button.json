@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "pyrite",
+  "ingredients": [
+    {
+      "item": "pyritemod:pyrite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyritemod:pyrite_button"
+  }
+}

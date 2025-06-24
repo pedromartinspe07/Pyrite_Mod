@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "pyritemod:raw_pyrite"
+    },
+    "R": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "RPR",
+    "RNR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyritemod:smithing_template_netherite"
+  }
+}

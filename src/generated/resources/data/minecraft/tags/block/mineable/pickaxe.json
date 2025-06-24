@@ -1,0 +1,11 @@
+{
+  "values": [
+    "pyritemod:pyrite_block",
+    "pyritemod:raw_pyrite_block",
+    "pyritemod:pyrite_ore",
+    "pyritemod:pyrite_deepslate_ore",
+    "pyritemod:pyrite_nether_ore",
+    "pyritemod:pyrite_end_ore",
+    "pyritemod:magic_block"
+  ]
+}

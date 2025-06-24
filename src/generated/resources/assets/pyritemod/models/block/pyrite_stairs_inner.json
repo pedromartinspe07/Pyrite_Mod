@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "pyritemod:block/pyrite_block",
+    "side": "pyritemod:block/pyrite_block",
+    "top": "pyritemod:block/pyrite_block"
+  }
+}

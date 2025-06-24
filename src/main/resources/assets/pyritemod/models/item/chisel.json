@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pyritemod:item/chisel"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pyritemod:used": 1
+      },
+      "model": "pyritemod:item/chisel_used"
+    }
+  ]
+}
