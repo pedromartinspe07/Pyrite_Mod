@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "pyrite",
+  "key": {
+    "#": {
+      "item": "pyritemod:pyrite"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "pyritemod:pyrite_door"
+  }
+}

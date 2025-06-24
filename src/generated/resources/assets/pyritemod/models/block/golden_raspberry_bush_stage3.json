@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crop": "pyritemod:block/golden_raspberry_bush_stage3"
+  }
+}

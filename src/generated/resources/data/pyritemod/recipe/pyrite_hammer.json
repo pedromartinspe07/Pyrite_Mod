@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "pyritemod:pyrite_block"
+    },
+    "P": {
+      "item": "pyritemod:pyrite"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "PBP",
+    "PSP",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyritemod:pyrite_hammer"
+  }
+}

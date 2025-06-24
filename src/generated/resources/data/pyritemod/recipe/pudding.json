@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "H": {
+      "item": "minecraft:honey_bottle"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "pattern": [
+    "HHH",
+    "SES",
+    "MMM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pyritemod:pudding"
+  }
+}

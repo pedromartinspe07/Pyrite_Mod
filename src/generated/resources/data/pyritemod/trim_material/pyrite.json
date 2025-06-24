@@ -1,0 +1,9 @@
+{
+  "asset_name": "pyrite",
+  "description": {
+    "color": "#F0FC03",
+    "translate": "trim_material.pyritemod.pyrite"
+  },
+  "ingredient": "pyritemod:pyrite",
+  "item_model_index": 0.8
+}
