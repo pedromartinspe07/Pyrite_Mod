@@ -83,6 +83,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.PYRITE_LAMP.get());
 
+                        output.accept(ModBlocks.BRAZILWOOD_SAPLING.get());
+
                     }).build());
 
 
