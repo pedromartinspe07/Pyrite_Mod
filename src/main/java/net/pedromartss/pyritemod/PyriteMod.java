@@ -1,6 +1,8 @@
 package net.pedromartss.pyritemod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +21,8 @@ import net.pedromartss.pyritemod.block.ModBlocks;
 import net.pedromartss.pyritemod.component.ModDataComponentTypes;
 import net.pedromartss.pyritemod.effect.ModEffects;
 import net.pedromartss.pyritemod.enchantment.ModEnchantmentEffects;
+import net.pedromartss.pyritemod.entity.ModEntities;
+import net.pedromartss.pyritemod.entity.client.CapivaraRenderer;
 import net.pedromartss.pyritemod.item.ModCreativeModeTabs;
 import net.pedromartss.pyritemod.item.ModItems;
 import net.pedromartss.pyritemod.potion.ModPotions;
@@ -52,6 +56,8 @@ public class PyriteMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities
+                .register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -91,6 +97,8 @@ public class PyriteMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.CAPIVARA.get(), CapivaraRenderer::new);
 
         }
     }

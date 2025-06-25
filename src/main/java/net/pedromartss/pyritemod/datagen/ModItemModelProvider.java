@@ -79,6 +79,8 @@ public class ModItemModelProvider extends ItemModelProvider {
           basicItem(ModItems.GOLDEN_RASPBERRIES.get());
 
           saplingItem(ModBlocks.BRAZILWOOD_SAPLING);
+
+          withExistingParent(ModItems.CAPYBARA_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {

@@ -3,12 +3,14 @@ package net.pedromartss.pyritemod.item;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.pedromartss.pyritemod.PyriteMod;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pedromartss.pyritemod.block.ModBlocks;
+import net.pedromartss.pyritemod.entity.ModEntities;
 import net.pedromartss.pyritemod.item.custom.ChiselItem;
 import net.pedromartss.pyritemod.item.custom.FuelItem;
 import net.pedromartss.pyritemod.item.custom.HammerItem;
@@ -103,6 +105,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> GOLDEN_RASPBERRIES = ITEMS.register("golden_raspberries",
             () -> new ItemNameBlockItem(ModBlocks.GOLDEN_RASPBERRY_BUSH.get(), new Item.Properties().food(ModFoodProperties.GOLDEN_RASPBERRY)));
+
+    public static final RegistryObject<Item> CAPYBARA_SPAWN_EGG = ITEMS.register("capybara_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.CAPIVARA, 0x8b5e3c, 0xd2b48c, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

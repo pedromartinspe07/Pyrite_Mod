@@ -25,6 +25,10 @@ import java.util.Random;
 
 import java.util.HashSet;
 import java.util.Set;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.pedromartss.pyritemod.entity.custom.CapivaraEntity;
 
 @Mod.EventBusSubscriber(modid = net.pedromartss.pyritemod.PyriteMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ModEvents {
@@ -82,6 +86,21 @@ public class ModEvents {
                 BlockPos pos = event.getPos();
                 ItemStack peachSeeds = new ItemStack(ModItems.PEACH_SEEDS.get());
                 event.getState().getBlock().popResource(level, pos, peachSeeds);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onCapivaraDeath(LivingDeathEvent event) {
+        LivingEntity entity = event.getEntity();
+        if (entity instanceof CapivaraEntity capivara && !entity.level().isClientSide()) {
+            int amount = entity.level().random.nextInt(3); // 0, 1 ou 2
+            if (amount > 0) {
+                entity.level().addFreshEntity(new ItemEntity(
+                    entity.level(),
+                    entity.getX(), entity.getY(), entity.getZ(),
+                    new ItemStack(Items.LEATHER, amount)
+                ));
             }
         }
     }

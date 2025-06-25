@@ -35,7 +35,9 @@
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
 
   "item.pyritemod.peach_seeds": "Peach Seeds",
-  "item.pyritemod.golden_raspberries": "Golden Raspberries  ",
+  "item.pyritemod.golden_raspberries": "Golden Raspberries",
+
+  "item.pyritemod.capybara_spawn_egg": "Capybara Spawn Egg",
 
 
   "block.pyritemod.pyrite_block": "Block of Pyrite",
@@ -90,6 +92,7 @@
 
   "creativetab.pyritemod.pyrite_items": "Pyrite Items",
   "creativetab.pyritemod.pyrite_blocks": "Pyrite Blocks",
+  "creativetab.pyritemod.spawn_eggs": "Spawn Eggs",
 
   "tooltip.pyritemod.magic_block_tooltip": "This Block is quite §9MAGICAL§r",
 
@@ -100,5 +103,7 @@
   "tooltip.pyritemod.peach": "This tastes SPEED!",
 
   "trim_pattern.pyritemod.pedromartss": "PedroMartss Armor Trim",
-  "trim_material.pyritemod.pyrite": "Pyrite Material"
+  "trim_material.pyritemod.pyrite": "Pyrite Material",
+
+  "entity.pyritemod.capivara": "Capybara"
 }

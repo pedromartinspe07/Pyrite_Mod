@@ -83,11 +83,26 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.PYRITE_LAMP.get());
 
+                        output.accept(ModBlocks.BRAZILWOOD_LOG.get());
+                        output.accept(ModBlocks.BRAZILWOOD_WOOD.get());
+                        output.accept(ModBlocks.BRAZILWOOD_PLANKS.get());
+                        output.accept(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_BRAZILWOOD_WOOD.get());
+                        output.accept(ModBlocks.BRAZILWOOD_LEAVES.get());
                         output.accept(ModBlocks.BRAZILWOOD_SAPLING.get());
+
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> SPAWN_EGGS = CREATIVE_MODE_TABS.register("pyrite_spawn_eggs_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CAPYBARA_SPAWN_EGG.get()))
+                    .withTabsBefore(PYRITE_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.pyritemod.spawn_eggs"))
+                    .displayItems((itemDisplayParameters, output) -> {
 
+                        output.accept(ModItems.CAPYBARA_SPAWN_EGG.get());
+
+                    }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

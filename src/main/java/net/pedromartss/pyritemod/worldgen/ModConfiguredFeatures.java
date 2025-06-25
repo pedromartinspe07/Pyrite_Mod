@@ -1,7 +1,10 @@
 package net.pedromartss.pyritemod.worldgen;
 
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -31,6 +34,8 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> BRAZILWOOD_KEY = registerKey("brazilwood_key");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_RASPBERRY_BUSH_KEY = registerKey("golden_raspberry_bush");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -56,6 +61,12 @@ public class ModConfiguredFeatures {
 
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
+
+        register(context, GOLDEN_RASPBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+         FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(
+                BlockStateProvider.simple(ModBlocks.GOLDEN_RASPBERRY_BUSH.get()
+                        .defaultBlockState().setValue(SweetBerryBushBlock.AGE, 3))
+        ), List.of(Blocks.GRASS_BLOCK)));
 
     }
 
