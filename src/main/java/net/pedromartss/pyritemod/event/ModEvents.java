@@ -18,6 +18,10 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.pedromartss.pyritemod.potion.ModPotions;
+import net.minecraft.world.level.block.Blocks;
+import net.pedromartss.pyritemod.item.ModItems;
+import net.minecraft.server.level.ServerLevel;
+import java.util.Random;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -67,5 +71,18 @@ public class ModEvents {
 
         builder.addMix(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION.getHolder().get());
 
+    }
+
+    @SubscribeEvent
+    public static void onGrassBreak(BlockEvent.BreakEvent event) {
+        if (!(event.getLevel() instanceof ServerLevel level)) return;
+        if (event.getState().getBlock() == Blocks.TALL_GRASS || event.getState().getBlock() == Blocks.SHORT_GRASS) {
+            // Mesma chance do vanilla para wheat_seeds: 1/8
+            if (level.random.nextInt(8) == 0) {
+                BlockPos pos = event.getPos();
+                ItemStack peachSeeds = new ItemStack(ModItems.PEACH_SEEDS.get());
+                event.getState().getBlock().popResource(level, pos, peachSeeds);
+            }
+        }
     }
 }

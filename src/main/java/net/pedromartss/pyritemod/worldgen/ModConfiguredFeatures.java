@@ -1,6 +1,12 @@
 package net.pedromartss.pyritemod.worldgen;
 
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.pedromartss.pyritemod.block.ModBlocks;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
@@ -23,6 +29,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PYRITE_ORE_KEY = registerKey("nether_pyrite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_PYRITE_ORE_KEY = registerKey("end_pyrite_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BRAZILWOOD_KEY = registerKey("brazilwood_key");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -39,6 +46,15 @@ public class ModConfiguredFeatures {
                 ModBlocks.PYRITE_NETHER_ORE.get().defaultBlockState(), 9));
         register(context, END_PYRITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
                 ModBlocks.PYRITE_END_ORE.get().defaultBlockState(), 9));
+
+        register(context, BRAZILWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BRAZILWOOD_LOG.get()),
+                new ForkingTrunkPlacer(4, 4, 3),
+
+                BlockStateProvider.simple(ModBlocks.BRAZILWOOD_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(3), 3),
+
+                new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
     }

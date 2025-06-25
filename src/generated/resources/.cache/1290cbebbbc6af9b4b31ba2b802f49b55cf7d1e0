@@ -1,4 +1,6 @@
-// 1.21.1	2025-06-24T17:59:21.2132354	Tags for minecraft:item mod id pyritemod
+// 1.21.1	2025-06-25T12:26:02.8312476	Tags for minecraft:item mod id pyritemod
+3eebfbd2b1c134dbacb586f12aec40d14b67776f data/minecraft/tags/item/logs_that_burn.json
+ce9b4b8a67ee52d3360a5d1ee63fa6a4f78bc2fb data/minecraft/tags/item/planks.json
 fff6f4d07a81a6b79f2033bc26e5a6445bd83ee5 data/minecraft/tags/item/trimmable_armor.json
 4b34ba8b9db1cb51720b0eb367c22203cf006c73 data/minecraft/tags/item/trim_materials.json
 59579fff6830c3cc40fffed000636fd82fc1b3b0 data/minecraft/tags/item/trim_templates.json

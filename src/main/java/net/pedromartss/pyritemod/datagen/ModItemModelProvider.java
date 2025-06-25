@@ -77,6 +77,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
           basicItem(ModItems.PEACH_SEEDS.get());
           basicItem(ModItems.GOLDEN_RASPBERRIES.get());
+
+          saplingItem(ModBlocks.BRAZILWOOD_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(PyriteMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     // Shoutout to El_Redstoniano for making this

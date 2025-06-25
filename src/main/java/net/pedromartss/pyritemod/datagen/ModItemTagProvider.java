@@ -8,6 +8,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.pedromartss.pyritemod.PyriteMod;
+import net.pedromartss.pyritemod.block.ModBlocks;
 import net.pedromartss.pyritemod.item.ModItems;
 import net.pedromartss.pyritemod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -40,5 +41,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.PEDROMARTSS_SMITHING_TEMPLATE.get());
+
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.BRAZILWOOD_LOG.get().asItem())
+                .add(ModBlocks.BRAZILWOOD_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_BRAZILWOOD_WOOD.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.BRAZILWOOD_PLANKS.get().asItem());
     }
 }

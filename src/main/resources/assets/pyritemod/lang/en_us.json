@@ -46,6 +46,16 @@
   "block.pyritemod.pyrite_end_ore": "Pyrite End Ore",
   "block.pyritemod.pyrite_nether_ore": "Pyrite Nether Ore",
 
+  "block.pyritemod.brazilwood_log": "Brazilwood Log",
+  "block.pyritemod.brazilwood_planks": "Brazilwood Planks",
+  "block.pyritemod.brazilwood_wood": "Brazilwood Wood",
+  "block.pyritemod.stripped_brazilwood_log": "Stripped Brazilwood Log",
+  "block.pyritemod.stripped_brazilwood_wood": "Stripped Brazilwood Wood",
+  "block.pyritemod.brazilwood_leaves": "Brazilwood Leaves",
+
+  "block.pyritemod.brazilwood_sapling": "Brazilwood Sapling",
+
+
   "block.pyritemod.magic_block": "Magic Block",
 
   "block.pyritemod.pyrite_stairs": "Pyrite Stairs",

@@ -1,6 +1,7 @@
-// 1.21.1	2025-06-24T17:59:21.2212374	Tags for minecraft:block mod id pyritemod
+// 1.21.1	2025-06-25T12:26:02.8372484	Tags for minecraft:block mod id pyritemod
 c1bda90ae951b297272ca86197ae0e9c2ec910de data/minecraft/tags/block/fences.json
 9df7b919a4731085e7b38cbcdebdeab59d99e0b6 data/minecraft/tags/block/fence_gates.json
+3eebfbd2b1c134dbacb586f12aec40d14b67776f data/minecraft/tags/block/logs_that_burn.json
 7fe3bc7af9cfc209ecda46f89da76cdbaec7403a data/minecraft/tags/block/mineable/pickaxe.json
 dd6f04275fe33ac5bd9b8f7e073ca9d2092bc620 data/minecraft/tags/block/needs_diamond_tool.json
 359dc40e7088ddfa73e94dcf955dd346fd7caa60 data/minecraft/tags/block/needs_iron_tool.json

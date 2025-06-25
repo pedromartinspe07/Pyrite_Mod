@@ -1,10 +1,14 @@
 package net.pedromartss.pyritemod.block;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,12 +16,10 @@ import net.minecraftforge.registries.RegistryObject;
 import net.pedromartss.pyritemod.PyriteMod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.pedromartss.pyritemod.block.custom.GoldenRaspberryBushBlock;
-import net.pedromartss.pyritemod.block.custom.MagicBlock;
-import net.pedromartss.pyritemod.block.custom.PeachCropBlock;
-import net.pedromartss.pyritemod.block.custom.PyriteLampBlock;
+import net.pedromartss.pyritemod.block.custom.*;
 import net.pedromartss.pyritemod.item.ModItems;
 import net.pedromartss.pyritemod.sound.ModSounds;
+import net.pedromartss.pyritemod.worldgen.tree.ModTreeGrowers;
 
 import java.util.function.Supplier;
 
@@ -78,9 +80,58 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PEACH_CROP = BLOCKS.register("peach_crop",
             () -> new PeachCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
-
     public static final RegistryObject<Block> GOLDEN_RASPBERRY_BUSH = BLOCKS.register("golden_raspberry_bush",
             () -> new GoldenRaspberryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final RegistryObject<RotatedPillarBlock> BRAZILWOOD_LOG = registerBlock("brazilwood_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final RegistryObject<RotatedPillarBlock> BRAZILWOOD_WOOD = registerBlock("brazilwood_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_BRAZILWOOD_LOG = registerBlock("stripped_brazilwood_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final RegistryObject<RotatedPillarBlock> STRIPPED_BRAZILWOOD_WOOD = registerBlock("stripped_brazilwood_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> BRAZILWOOD_PLANKS = registerBlock("brazilwood_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+
+            });
+
+    public static final RegistryObject<Block> BRAZILWOOD_LEAVES = registerBlock("brazilwood_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+
+            });
+
+    public static final RegistryObject<Block> BRAZILWOOD_SAPLING = registerBlock("brazilwood_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.BRAZILWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block ) {

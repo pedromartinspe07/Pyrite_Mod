@@ -60,6 +60,32 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         makeCrop(((CropBlock) ModBlocks.PEACH_CROP.get()), "peach_crop_stage", "peach_crop_stage");
         makeBush(((SweetBerryBushBlock) ModBlocks.GOLDEN_RASPBERRY_BUSH.get()), "golden_raspberry_bush_stage", "golden_raspberry_bush_stage");
+
+        logBlock(ModBlocks.BRAZILWOOD_LOG.get());
+        axisBlock(ModBlocks.BRAZILWOOD_WOOD.get(), blockTexture(ModBlocks.BRAZILWOOD_LOG.get()), blockTexture(ModBlocks.BRAZILWOOD_LOG.get()));
+        logBlock(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get());
+        axisBlock(ModBlocks.STRIPPED_BRAZILWOOD_WOOD.get(), blockTexture(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get()));
+
+        blockItem(ModBlocks.BRAZILWOOD_LOG);
+        blockItem(ModBlocks.BRAZILWOOD_WOOD);
+        blockItem(ModBlocks.STRIPPED_BRAZILWOOD_LOG);
+        blockItem(ModBlocks.STRIPPED_BRAZILWOOD_WOOD);
+
+        blockWithItem(ModBlocks.BRAZILWOOD_PLANKS);
+
+        leavesBlock(ModBlocks.BRAZILWOOD_LEAVES);
+        saplingBlock(ModBlocks.BRAZILWOOD_SAPLING);
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {

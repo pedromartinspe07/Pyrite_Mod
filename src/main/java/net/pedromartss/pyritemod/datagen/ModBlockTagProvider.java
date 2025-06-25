@@ -47,5 +47,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_PYRITE_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_PYRITE_TOOL);
+
+            this.tag(BlockTags.LOGS_THAT_BURN)
+                    .add(ModBlocks.BRAZILWOOD_LOG.get())
+                    .add(ModBlocks.BRAZILWOOD_WOOD.get())
+                    .add(ModBlocks.STRIPPED_BRAZILWOOD_LOG.get())
+                    .add(ModBlocks.STRIPPED_BRAZILWOOD_WOOD.get());
     }
 }

@@ -1,4 +1,9 @@
-// 1.21.1	2025-06-24T17:59:21.2172372	Loot Tables
+// 1.21.1	2025-06-25T12:26:02.8332477	Loot Tables
+fe9543cb7fd5f6f71656b6de9e72672d96cd0aff data/pyritemod/loot_table/blocks/brazilwood_leaves.json
+f8499886b53dabc4b153747bd3b7192087da9991 data/pyritemod/loot_table/blocks/brazilwood_log.json
+bb0504f282240f309db1295141e92bba1fce3a5c data/pyritemod/loot_table/blocks/brazilwood_planks.json
+17ca2d16253f860e53fc202fae1de0eb0034fdd8 data/pyritemod/loot_table/blocks/brazilwood_sapling.json
+56868ad1d7a18247f5f82b655d5125c6b06b14f0 data/pyritemod/loot_table/blocks/brazilwood_wood.json
 d2b420b9c4847407e3612877c4463e028ac160f1 data/pyritemod/loot_table/blocks/golden_raspberry_bush.json
 1a63466fac6115445330bf27cc20c79701a16d2c data/pyritemod/loot_table/blocks/peach_crop.json
 d947fccfb64517589a3bb2462acbc0c159d05964 data/pyritemod/loot_table/blocks/pyrite_block.json
@@ -17,3 +22,5 @@ b0fce6009cd7eb9602156b240b1461c08863431a data/pyritemod/loot_table/blocks/pyrite
 112ceada4f1763aec70e825d4666fbcdcf1b5532 data/pyritemod/loot_table/blocks/pyrite_trapdoor.json
 c20d7916f980161c89c01d26c78c8ae7a35596d2 data/pyritemod/loot_table/blocks/pyrite_wall.json
 ab20bdfa92942b8864dbe788554b1c5206d7b15e data/pyritemod/loot_table/blocks/raw_pyrite_block.json
+0f8421d937c07c6f47be8ec2e07a92eeede5dd63 data/pyritemod/loot_table/blocks/stripped_brazilwood_log.json
+1c1fa060b76a00d1371f52d9f4de5cdb6a66e2c1 data/pyritemod/loot_table/blocks/stripped_brazilwood_wood.json
