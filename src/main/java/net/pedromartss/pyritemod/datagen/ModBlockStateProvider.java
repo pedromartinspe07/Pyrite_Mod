@@ -75,6 +75,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(ModBlocks.BRAZILWOOD_LEAVES);
         saplingBlock(ModBlocks.BRAZILWOOD_SAPLING);
+
+        blockWithItem(ModBlocks.PYRITHEA_PORTAL);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

@@ -28,7 +28,10 @@ import net.pedromartss.pyritemod.item.ModItems;
 import net.pedromartss.pyritemod.potion.ModPotions;
 import net.pedromartss.pyritemod.sound.ModSounds;
 import net.pedromartss.pyritemod.util.ModItemProperties;
+import net.pedromartss.pyritemod.worldgen.biome.ModTerrablender;
+import net.pedromartss.pyritemod.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PyriteMod.MOD_ID)
@@ -56,8 +59,7 @@ public class PyriteMod {
         ModPotions.register(modEventBus);
 
         ModEnchantmentEffects.register(modEventBus);
-        ModEntities
-                .register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -69,6 +71,10 @@ public class PyriteMod {
         event.enqueueWork(() -> {
             ComposterBlock.COMPOSTABLES.put(ModItems.PEACH.get(), 0.4f);
             ComposterBlock.COMPOSTABLES.put(ModItems.PEACH_SEEDS.get(), 0.15f);
+
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
+
+            ModTerrablender.registerBiomes();
         });
     }
 

@@ -133,6 +133,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BRAZILWOOD_SAPLING = registerBlock("brazilwood_sapling",
             () -> new SaplingBlock(ModTreeGrowers.BRAZILWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> PYRITHEA_PORTAL = registerBlock("pyrithea_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noLootTable().noOcclusion().noCollission()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block ) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

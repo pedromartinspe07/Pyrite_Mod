@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-25T12:26:02.8352478	Block States: pyritemod
+// 1.21.1	2025-06-27T15:43:33.9888537	Block States: pyritemod
 4df0ba82e032e77e0062a3bf1530d23198ed040e assets/pyritemod/blockstates/brazilwood_leaves.json
 1362bf9daa0c0356e53226e77c1c9e7667f63f21 assets/pyritemod/blockstates/brazilwood_log.json
 9a8b01c738f368af6631063d161cac0f57ac2c1e assets/pyritemod/blockstates/brazilwood_planks.json
@@ -22,6 +22,7 @@ d2047381ac0d09ee883affe610e79b46bf5d1a1b assets/pyritemod/blockstates/pyrite_ore
 5237716392355304f1ad20012cb24dbcbae1a098 assets/pyritemod/blockstates/pyrite_stairs.json
 94aff6d18d76bd27856ccef5f247486257e76b55 assets/pyritemod/blockstates/pyrite_trapdoor.json
 7e1c0fff0329aab80698d8cb720809c96ebc0d3d assets/pyritemod/blockstates/pyrite_wall.json
+e98cef4d6631b2ad07d0e99f542671da9b9c17d8 assets/pyritemod/blockstates/pyrithea_portal.json
 1ed71e7015d5fdd0fe02afd6bfaf68527cd57090 assets/pyritemod/blockstates/raw_pyrite_block.json
 228a3be422222d664367a1224aaf0ed58c90823d assets/pyritemod/blockstates/stripped_brazilwood_log.json
 b605ff571e553dcd1e3d9ab882dd6ecafefa5157 assets/pyritemod/blockstates/stripped_brazilwood_wood.json
@@ -79,6 +80,7 @@ d2ba81e5c8ee145ce5cbe7b4fa7d77ad633f848a assets/pyritemod/models/block/pyrite_st
 25d4ffbc369d45dd5eaa7eaf46284a36aecc86bf assets/pyritemod/models/block/pyrite_wall_post.json
 e5dcf3543f472066654ef831c14f1d54f26865a4 assets/pyritemod/models/block/pyrite_wall_side.json
 0e1b7c3e67a7f11e6d4640e6b3f27db1af110cac assets/pyritemod/models/block/pyrite_wall_side_tall.json
+4d135d45e4881d6609d6dc628e208c716537faf1 assets/pyritemod/models/block/pyrithea_portal.json
 67164f32885311ec45f9db39fc95f9ea0d3e1d55 assets/pyritemod/models/block/raw_pyrite_block.json
 438af47ac36d225157b61add194b72a0b23c0699 assets/pyritemod/models/block/stripped_brazilwood_log.json
 a4c8b96673e9530f20c0384dc513c8cb25105c5c assets/pyritemod/models/block/stripped_brazilwood_log_horizontal.json
@@ -100,6 +102,7 @@ f3e8aafe43bb68dc2fbfa28f4ced534dcdd51641 assets/pyritemod/models/item/pyrite_net
 da22d7488149e8ce4a7f15c3e20dd3ccdf5e3513 assets/pyritemod/models/item/pyrite_slab.json
 98b740694e1149d1c26e328a805387f8d419dea4 assets/pyritemod/models/item/pyrite_stairs.json
 37f6e3c5cc40d43b6e23467692d406d6a9c2c4e6 assets/pyritemod/models/item/pyrite_trapdoor.json
+c9b1f07ad4ae2a9ae7350570dd1475b43b2385cc assets/pyritemod/models/item/pyrithea_portal.json
 990e3ceef2edbd95eab70aab62e61f730201c8d3 assets/pyritemod/models/item/raw_pyrite_block.json
 77849c7a1ad824d55aa8516f605f0e998777de1d assets/pyritemod/models/item/stripped_brazilwood_log.json
 881f12dbea415d84ceabd01d4401b3e3d07e5af4 assets/pyritemod/models/item/stripped_brazilwood_wood.json

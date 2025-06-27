@@ -1,9 +1,11 @@
-// 1.21.1	2025-06-24T17:59:21.2182375	Recipes
+// 1.21.1	2025-06-26T17:19:35.9866754	Recipes
+41dbb43e7806c746dac73f6c2083214058865b42 data/pyritemod/advancement/recipes/building_blocks/brazilwood_planks.json
 3ed46cf6009b5d010d47c4e97a24e2fd748d5a57 data/pyritemod/advancement/recipes/building_blocks/pyrite_slab.json
 8e75e86115f1b16bd9212113f098c4aadd80e5d2 data/pyritemod/advancement/recipes/building_blocks/pyrite_stairs.json
 3742590de0a9e7c3777be84b6d2ed9993b079ed8 data/pyritemod/advancement/recipes/building_blocks/pyrite_wall.json
 093fdfa2a9d02caf0cdec1560b741e72cccee7ea data/pyritemod/advancement/recipes/decorations/pyrite_fence.json
 2d079fce4b8226be658d80a57d47ba0ee46b3f9d data/pyritemod/advancement/recipes/food/pudding.json
+e976f7c4512f6cc37f164249c6aff88611aa7816 data/pyritemod/advancement/recipes/misc/aurora_ashes.json
 d523d4f892a01ecb8c957b41d80a2f8c4430810d data/pyritemod/advancement/recipes/misc/pedromartss.json
 123d5f234b4e7ac6f52cd170a5addd7e500ac90f data/pyritemod/advancement/recipes/misc/pyrite.json
 351f16987b97f93a096f84a8cc401dbb5d290d20 data/pyritemod/advancement/recipes/misc/pyrite_block.json
@@ -29,6 +31,8 @@ e992b1f7e81e413a11d4cef738bbac9239343596 data/pyritemod/advancement/recipes/tool
 61489adedb38438fc9a7be10ce092420746dbfa8 data/pyritemod/advancement/recipes/tools/pyrite_pickaxe.json
 846f1fec1536dfd815708507d669d8b6b4ae0673 data/pyritemod/advancement/recipes/tools/pyrite_shovel.json
 41e76df87ccc758d5a1cb7ef2d39a306d2d73c71 data/pyritemod/advancement/recipes/tools/pyrite_sword.json
+a3ecbecfaa09746532bb2feabb6d05e56b874231 data/pyritemod/recipe/aurora_ashes.json
+1960be2a0b76c7932ace20cf54ff73cc905e6f37 data/pyritemod/recipe/brazilwood_planks.json
 3fa267429b7d2247cfa624dae3673df29177f9a3 data/pyritemod/recipe/chisel.json
 7816e8e4ed38dfa270d8adf1b1f7ee10f3dcbb6a data/pyritemod/recipe/pedromartss.json
 0d1534861eff09816ec168ca6c59d8d564954a24 data/pyritemod/recipe/pudding.json

@@ -14,6 +14,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.pedromartss.pyritemod.entity.ModEntities;
+import net.pedromartss.pyritemod.worldgen.biome.ModBiomes;
 
 import java.util.List;
 
@@ -53,19 +54,20 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.END_PYRITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_BRAZILWOOD_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SAVANNA)),
-                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.BRAZILWOOD_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+        // context.register(ADD_BRAZILWOOD_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SAVANNA)),
+        //        HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.BRAZILWOOD_PLACED_KEY)),
+        //       GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(ADD_GOLDEN_RASPBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.FOREST)),
+         context.register(ADD_GOLDEN_RASPBERRY_BUSH, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.ATLANTIC_FOREST)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.GOLDEN_RASPBERRY_BUSH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(SPAWN_CAPYBARA, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS)),
+         context.register(SPAWN_CAPYBARA, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.ATLANTIC_FOREST)),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.CAPIVARA.get(), 25, 3, 5))));
+
 
     }
 

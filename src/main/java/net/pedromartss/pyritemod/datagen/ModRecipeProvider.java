@@ -172,6 +172,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', net.minecraft.world.item.Items.STICK)
                 .unlockedBy(getHasName(ModItems.PYRITE.get()), has(ModItems.PYRITE.get()))
                 .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BRAZILWOOD_PLANKS.get(), 4)
+                .requires(ModBlocks.BRAZILWOOD_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.BRAZILWOOD_LOG.get()), has(ModBlocks.BRAZILWOOD_LOG.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.AURORA_ASHES.get())
+                .pattern(" P ")
+                .pattern("P P")
+                .pattern(" P ")
+                .define('P', ModItems.PYRITE.get())
+                .unlockedBy(getHasName(ModItems.PYRITE.get()), has(ModItems.PYRITE.get()))
+                .save(pRecipeOutput);
     }
 
     private void netheriteSmithing(RecipeOutput pRecipeOutput, @NotNull Item item, ResourceLocation smithingTemplateNetherite) {

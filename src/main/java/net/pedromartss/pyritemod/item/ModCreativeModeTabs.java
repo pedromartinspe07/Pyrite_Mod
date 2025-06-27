@@ -91,6 +91,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BRAZILWOOD_LEAVES.get());
                         output.accept(ModBlocks.BRAZILWOOD_SAPLING.get());
 
+                        output.accept(ModBlocks.PYRITHEA_PORTAL.get());
+
 
                     }).build());
 
